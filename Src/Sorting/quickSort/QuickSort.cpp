@@ -19,7 +19,7 @@ int _partition(int *array, int left, int right, Direction direction = Direction:
         if (pivot < array[_l]) _swap(&array[_l], &array[right]);
         return _l;
     case Direction::L2S:
-        _l = left; _r = right; pivot = array[left];
+        _l = left; _r = right; pivot = array[right];
         while (_l < _r)
         {
             while ((array[_l] >= pivot) && (_l < _r)) ++_l;
